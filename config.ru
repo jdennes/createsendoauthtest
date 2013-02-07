@@ -18,7 +18,8 @@ class App < Sinatra::Base
     refresh_token = request.env['omniauth.auth']['credentials']['refresh_token']
     expires_at = request.env['omniauth.auth']['credentials']['expires_at']
     
-    response = "Your user is successfully authenticated. Here are you details you need:<br/><br/>"
+    response = "<pre>"
+    response << "Your user is successfully authenticated. Here are you details you need:<br/><br/>"
     response << "access token: #{access_token}<br/>"
     response << "refresh token: #{refresh_token}<br/>"
     response << "expires at: #{expires_at}<br/>"
@@ -30,6 +31,7 @@ class App < Sinatra::Base
 
     response << "We've made an API call too. Here are your clients:<br/><br/>"
     response << MultiJson.encode(clients)
+    response << "</pre>"
     response
   end
 
