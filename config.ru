@@ -1,3 +1,8 @@
+# 1. Set CREATESEND_CLIENT_ID and CREATESEND_CLIENT_SECRET environment
+#    variables for your registered OAuth application.
+# 2. `bundle install`
+# 3. `rackup`
+
 require 'bundler/setup'
 require 'sinatra/base'
 require 'omniauth-createsend'
