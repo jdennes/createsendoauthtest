@@ -1,13 +1,28 @@
+GIT
+  remote: git://github.com/campaignmonitor/createsend-ruby.git
+  revision: 0670b229523b7380796eb2ef9fdd601101ddc25f
+  branch: oauth-support
+  specs:
+    createsend (2.5.1)
+      hashie (~> 1.0)
+      httparty (~> 0.10)
+      json
+
 GEM
   remote: http://rubygems.org/
   specs:
     faraday (0.8.5)
       multipart-post (~> 1.1)
     hashie (1.2.0)
+    httparty (0.10.2)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
     httpauth (0.2.0)
+    json (1.7.6)
     jwt (0.1.5)
       multi_json (>= 1.0)
     multi_json (1.5.0)
+    multi_xml (0.5.2)
     multipart-post (1.1.5)
     oauth2 (0.8.0)
       faraday (~> 0.8)
@@ -36,5 +51,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  createsend!
   omniauth-createsend
   sinatra
