@@ -10,7 +10,7 @@ require 'createsend'
 
 class App < Sinatra::Base
   get '/' do
-    redirect CreateSend.authorize_url ENV['CREATESEND_CLIENT_ID'],
+    redirect CreateSend::CreateSend.authorize_url ENV['CREATESEND_CLIENT_ID'],
       ENV['CREATESEND_CLIENT_SECRET'], ENV['CREATESEND_REDIRECT_URI'],
       'ViewReports,CreateCampaigns,SendCampaigns'
   end
