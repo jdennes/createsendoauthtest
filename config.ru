@@ -25,7 +25,7 @@ class App < Sinatra::Base
     response << "Your user is successfully authenticated. Here are the details you need:<br/><br/>"
     response << "access token: #{access_token}<br/>"
     response << "refresh token: #{refresh_token}<br/>"
-    response << "expires at: #{expires_at}<br/>"
+    response << "expires in: #{expires_in}<br/>"
     response << "<br/><br/>"
 
     auth = {
