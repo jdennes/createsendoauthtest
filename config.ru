@@ -10,9 +10,10 @@ require 'createsend'
 
 class App < Sinatra::Base
   get '/' do
-    redirect CreateSend::CreateSend.authorize_url ENV['CREATESEND_CLIENT_ID'],
-      ENV['CREATESEND_CLIENT_SECRET'], ENV['CREATESEND_REDIRECT_URI'],
-      'ViewReports,CreateCampaigns,SendCampaigns'
+    redirect CreateSend::CreateSend.authorize_url(
+      ENV['CREATESEND_CLIENT_ID'],
+      ENV['CREATESEND_REDIRECT_URI'],
+      'ViewReports,CreateCampaigns,SendCampaigns')
   end
 
   get '/exchange_token' do
