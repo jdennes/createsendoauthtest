@@ -1,10 +1,3 @@
-GIT
-  remote: git://github.com/jdennes/omniauth-createsend.git
-  revision: 912b63e1c5e77ef85342d16500826caa247fdbbe
-  specs:
-    omniauth-createsend (1.0.1)
-      omniauth-oauth2 (~> 1.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -34,6 +27,8 @@ GEM
     omniauth (1.1.3)
       hashie (~> 1.2)
       rack
+    omniauth-createsend (1.0.2)
+      omniauth-oauth2 (~> 1.1)
     omniauth-oauth2 (1.1.1)
       oauth2 (~> 0.8.0)
       omniauth (~> 1.0)
@@ -51,5 +46,5 @@ PLATFORMS
 
 DEPENDENCIES
   createsend
-  omniauth-createsend!
+  omniauth-createsend
   sinatra
