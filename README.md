@@ -6,6 +6,6 @@ This app makes use of the [omniauth-createsend](https://github.com/jdennes/omnia
 
 To run:
 
-1. Set `CREATESEND_CLIENT_ID` and `CREATESEND_CLIENT_SECRET` environment variables for your registered OAuth 2 application.
+1. Set `CREATESEND_CLIENT_ID` and `CREATESEND_CLIENT_SECRET` environment variables for your registered OAuth application.
 2. `bundle install`
-3. `ruby app.rb`
+3. `foreman start` or `ruby app.rb`
